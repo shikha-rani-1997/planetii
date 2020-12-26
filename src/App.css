@@ -1,38 +1,197 @@
 .App {
+  position: relative;
   text-align: center;
 }
+.nav {
+  position: absolute;
+  top: 8px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 50px;
   color: white;
+  text-align: center;
+  width: 100%;
+  height: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7px;
+  background: radial-gradient(ellipse at bottom, #1f2730, #111);
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.night {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  background: radial-gradient(ellipse at bottom, #1c1c1d, rgb(22, 18, 18));
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateZ(40deg);
+}
+.scene .stars {
+  position: absolute;
+  left: 50%;
+  height: 4px;
+  width: 50px;
+  background: linear-gradient(-45deg, #bbbcbd, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #f5f6f7);
+  animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
+}
+@keyframes tail {
+  0% {
+    width: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  60% {
+    width: 100px;
   }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes falling {
+  0% {
+    transform: translateX(60);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+.stars::before,
+.stars::after {
+  content: "";
+  position: absolute;
+  top: calc(100% -2px);
+  right: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff);
+  border-radius: 100%;
+  transform: translateX(50%) rotate(45deg);
+  animation: shining 3s ease-in-out infinite;
+}
+@keyframes shining {
+  0% {
+    width: 0px;
+  }
+  70% {
+    width: 30px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+.stars::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+.stars:nth-child(1) {
+  top: calc(50% -200px);
+  left: calc(50% -250px);
+  animation-delay: 0.6s;
+}
+.stars:nth-child(1)::before,
+.stars:nth-child(1)::after {
+  animation-delay: 0.6s;
+}
+.stars:nth-child(2) {
+  top: calc(50% -100px);
+  left: calc(50% -250px);
+  animation-delay: 1s;
+}
+.stars:nth-child(1)::before,
+.stars:nth-child(1)::after {
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  top: calc(50% -100px);
+  left: calc(50% -250px);
+  animation-delay: 1.2s;
+}
+.stars:nth-child(1)::before,
+.stars:nth-child(1)::after {
+  animation-delay: 1.2s;
+}
+.stars:nth-child(1) {
+  top: calc(50% - 100px);
+  left: calc(50% - 200px);
+  animation-delay: 1.4s;
+}
+.stars:nth-child(2)::before,
+.stars:nth-child(2)::after {
+  animation-delay: 1.4s;
+}
+.stars:nth-child(2) {
+  top: calc(50% - -50px);
+  left: calc(50% - 200px);
+  animation-delay: 1.6s;
+}
+
+.stars:nth-child(3)::before,
+.stars:nth-child(3)::after {
+  animation-delay: 1.6s;
+}
+
+.stars:nth-child(4) {
+  top: calc(50% - -100px);
+  left: calc(50% - 250px);
+  animation-delay: 1.8s;
+}
+
+.stars:nth-child(5)::before,
+.stars:nth-child(5)::after {
+  animation-delay: 1.8s;
+}
+
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: grey;
+  border: 1px solid #908f8f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tab-list-item:hover {background-color: #3e8e41}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  border: 2px;
+  outline: black;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
