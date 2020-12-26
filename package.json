@@ -2,7 +2,7 @@
   "name": "planet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://shikha-rani-1997.github.io/planetii",
+  "homepage": "http://shikha-rani-1997/github.io/planetii",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
