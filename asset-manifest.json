@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/github.io/planetii/static/css/main.d4e73ecd.chunk.css",
-    "main.js": "/github.io/planetii/static/js/main.d55a8af5.chunk.js",
-    "main.js.map": "/github.io/planetii/static/js/main.d55a8af5.chunk.js.map",
-    "runtime-main.js": "/github.io/planetii/static/js/runtime-main.7de314af.js",
-    "runtime-main.js.map": "/github.io/planetii/static/js/runtime-main.7de314af.js.map",
-    "static/js/2.a6b844ea.chunk.js": "/github.io/planetii/static/js/2.a6b844ea.chunk.js",
-    "static/js/2.a6b844ea.chunk.js.map": "/github.io/planetii/static/js/2.a6b844ea.chunk.js.map",
-    "index.html": "/github.io/planetii/index.html",
-    "static/css/main.d4e73ecd.chunk.css.map": "/github.io/planetii/static/css/main.d4e73ecd.chunk.css.map",
-    "static/js/2.a6b844ea.chunk.js.LICENSE.txt": "/github.io/planetii/static/js/2.a6b844ea.chunk.js.LICENSE.txt",
-    "static/media/galaxy.e108660f.jpg": "/github.io/planetii/static/media/galaxy.e108660f.jpg"
+    "main.css": "/planetii/static/css/main.d4e73ecd.chunk.css",
+    "main.js": "/planetii/static/js/main.d55a8af5.chunk.js",
+    "main.js.map": "/planetii/static/js/main.d55a8af5.chunk.js.map",
+    "runtime-main.js": "/planetii/static/js/runtime-main.e015e94c.js",
+    "runtime-main.js.map": "/planetii/static/js/runtime-main.e015e94c.js.map",
+    "static/js/2.a6b844ea.chunk.js": "/planetii/static/js/2.a6b844ea.chunk.js",
+    "static/js/2.a6b844ea.chunk.js.map": "/planetii/static/js/2.a6b844ea.chunk.js.map",
+    "index.html": "/planetii/index.html",
+    "static/css/main.d4e73ecd.chunk.css.map": "/planetii/static/css/main.d4e73ecd.chunk.css.map",
+    "static/js/2.a6b844ea.chunk.js.LICENSE.txt": "/planetii/static/js/2.a6b844ea.chunk.js.LICENSE.txt",
+    "static/media/galaxy.e108660f.jpg": "/planetii/static/media/galaxy.e108660f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7de314af.js",
+    "static/js/runtime-main.e015e94c.js",
     "static/js/2.a6b844ea.chunk.js",
     "static/css/main.d4e73ecd.chunk.css",
     "static/js/main.d55a8af5.chunk.js"
